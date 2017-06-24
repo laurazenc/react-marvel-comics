@@ -14,18 +14,35 @@ const queryParams = {
   hash: md5(timeStamp + config.API_PRIVATE + config.API_PUBLIC)
 };
 
-export const getCharacters = () => {
+export const getCharactersRequest = (query = null) => {
   const url = `${config.BASE_URL}${URI}`;
+  console.log(url);
+  const queryParams = {
+    ts: timeStamp,
+    apikey: config.API_PUBLIC,
+    hash: md5(timeStamp + config.API_PRIVATE + config.API_PUBLIC),
+    nameStartsWith: query
+  };
   return axios
           .get(url, { params: queryParams })
           .then((response) => Promise.resolve(response.data))
           .catch((error) => Promise.reject(error));
 };
 
-
 export const getCharacterInfo = (characterId = null) => {
   if (characterId) {
     const url = `${config.BASE_URL}${URI}/${characterId}`;
+
+    return axios
+            .get(url, { params: queryParams })
+            .then((response) => Promise.resolve(response.data))
+            .catch((error) => Promise.reject(error));
+  }
+  return Promise.reject({message: 'characterId is not defined'});
+};
+export const getCharacterComics = (characterId = null) => {
+  if (characterId) {
+    const url = `${config.BASE_URL}${URI}/${characterId}/comics`;
 
     return axios
             .get(url, { params: queryParams })

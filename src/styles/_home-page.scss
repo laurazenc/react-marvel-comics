@@ -1,0 +1,53 @@
+.search-bar {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.4);
+  overflow: hidden;
+
+  &:focus {
+    outline: none;
+  }
+  #search {
+    width: inherit;
+    height: 60px;
+    padding: 0 10px;
+    border: 0;
+    background-color: white;
+    border-bottom: 2px solid $vin-red;
+    font-size: 14px;
+
+    &:focus {
+      outline-offset: none;
+      outline: none;
+    }
+  }
+}
+
+.heroes-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .hero {
+    margin: 0 10px;
+    width: calc(100% / 4);
+    height: 250px;
+    position: relative;
+    border-radius: 5px;
+
+    .hero-name {
+      font-family: 'Marvel';
+      font-size: 16px;
+    }
+
+    .hero-thumbnail {
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      height: 200px;
+    }
+  }
+}

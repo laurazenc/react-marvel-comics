@@ -1,7 +1,7 @@
 /* Variables */
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
-$vin-red: #ff0000;
+$vin-red: #F11E22;
 
 $background-color: #f2f5f7;
 
@@ -10,14 +10,28 @@ $background-color: #f2f5f7;
   src: ('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 }
 
+@font-face{
+  font-family: 'Marvel';
+  src: url("./../../fonts/PalookaBold.otf");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face{
+  font-family:'league-gothic';
+  src:  url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/d?subset_id=2&fvd=n4&v=3) format("woff"),
+        url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight:normal;
+  font-style:normal;
+}
+
 
 /* Styles */
 body {
   font: 14px 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
   color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -26,5 +40,23 @@ body {
   background-color: $background-color;
 }
 
+.navbar {
+  width: 100%;
+  background-color: $vin-red;
+  padding: 7px;
 
-@import 'header-page';
+  a.logo {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    background: url('https://i.annihil.us/u/prod/misc/marvel.svg');
+    background-size: 108px 42px;
+    width: 108px;
+    height: 42px;
+  }
+}
+
+
+@import 'home-page';
+@import 'detail-page';

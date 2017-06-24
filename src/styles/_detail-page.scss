@@ -1,0 +1,48 @@
+.hero-detail {
+  h3 {
+    font-family: 'league-gothic';
+    font-size: 30px;
+  }
+
+  .hero-header {
+    height: 275px;
+    width: 100%;
+    position: relative;
+
+    .hero-top-header {
+      background-color: black;
+      padding: 15px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+
+      .hero-thumbnail-content{
+        position: relative;
+
+        .hero-thumbnail {
+          height: 250px;
+          width: 200px;
+          background-size: cover;
+          border-radius: 7px;
+          box-shadow: 0 0 3px rgba(0,0,0,0.4);
+        }
+      }
+
+      .hero-content {
+        width: 300px;
+        margin-left: 20px;
+        color: white;
+        .hero-name {
+          font-family: 'Marvel';
+          font-size: 30px;
+          line-height: 40px;
+        }
+
+      }
+    }
+
+    .hepo-top-image {
+      position: absolute;
+    }
+  }
+}
