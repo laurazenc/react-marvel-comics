@@ -85,15 +85,17 @@ export function saveComic(comic) {
 }
 
 export function getComic(id) {
-  let comic;  
-  return new Promise((resolve) => {
+  let comic;
+  return () => {
+    return new Promise((resolve) => {
       getComicRequest(id)
       .then((data) => {
         comic = data.data.results[0];
         resolve(comic);
       });
 
-  });
+    });
+  }
 }
 
 export function getFavorites() {

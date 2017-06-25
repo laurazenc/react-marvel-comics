@@ -26,7 +26,7 @@
     "open:cover": "npm run test:cover && opn ./coverage/lcov-report/index.html",
     "analyze-bundle": "babel-node ./tools/analyzeBundle.js"
   },
-  "author": "",
+  "author": "Laura Coalla",
   "license": "MIT",
   "dependencies": {
     "axios": "0.16.2",
