@@ -1,0 +1,46 @@
+.character-box {
+  margin: 0 10px;
+  width: calc(100% / 4);
+  height: 250px;
+  position: relative;
+  text-decoration: none;
+
+  .character-content {
+    position: relative;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+
+    &:hover {
+      box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4);
+
+      .character-name {
+        background-color: $vin-red;
+        color: $black;
+      }
+    }
+
+
+    .character-name {
+      height: 30px;
+      background: $black;
+      text-align: right;
+      padding: 0 7px;
+      color: white;
+      width: 100%;
+      font-family: 'Marvel';
+      font-size: 20px;
+      line-height: 30px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .character-thumbnail {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      height: 200px;
+    }
+  }
+}

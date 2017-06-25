@@ -1,0 +1,66 @@
+$vin-blue: #5bb7db;
+$vin-green: #60b044;
+$vin-red: #F11E22;
+
+$black: #2E2E34;
+
+$background-color: #f2f5f7;
+
+
+@font-face{
+  font-family: 'Roboto';
+  src: ('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+}
+
+@font-face{
+  font-family: 'Marvel';
+  src: url("./../../fonts/PalookaBold.otf");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face{
+  font-family:'league-gothic';
+  src:  url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/d?subset_id=2&fvd=n4&v=3) format("woff"),
+        url(https://use.typekit.net/af/a4f895/000000000000000000014689/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px 'Roboto', Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  color: #4d4d4d;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+  background-color: $background-color;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+}
+
+@import 'components/character';
+@import 'components/comic';
+@import 'components/loading';
+@import 'components/modal-comic';
+@import 'components/navbar';
+@import 'components/pagination';
+@import 'components/searchbar';
+
+@import 'detail-page';
+@import 'favorites-page';
+@import 'home-page';

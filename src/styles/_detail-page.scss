@@ -1,0 +1,71 @@
+.character-detail {
+  h3 {
+    font-family: 'league-gothic';
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .character-header {
+    height: 230px;
+    width: 100%;
+    position: relative;
+
+    .character-top-header {
+      background-color: $black;
+      height: 150px;
+      text-align: center;
+      .character-name {
+        font-family: 'Marvel';
+        font-size: 40px;
+        line-height: 75px;
+        color: white;
+        height: 75px;
+      }
+
+      .character-thumbnail-content{
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        .character-thumbnail {
+          height: 150px;
+          background-size: cover;
+          border-radius: 50%;
+          border: 7px solid $black;
+          box-shadow: 0 0 3px rgba(0,0,0,0.4);
+        }
+      }
+
+    }
+
+  }
+  .character-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    color: $black;
+  }
+
+  .character-links {
+    .link {
+      display: inline-block;
+      text-transform: capitalize;
+      text-decoration: none;
+      margin-right: 15px;
+      color: $vin-red;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+  }
+}
+
+.comics-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
