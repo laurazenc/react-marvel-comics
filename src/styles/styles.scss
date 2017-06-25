@@ -1,9 +1,11 @@
-/* Variables */
 $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #F11E22;
 
+$black: #2E2E34;
+
 $background-color: #f2f5f7;
+
 
 @font-face{
   font-family: 'Roboto';
@@ -26,8 +28,14 @@ $background-color: #f2f5f7;
   font-style:normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-/* Styles */
 body {
   font: 14px 'Roboto', Helvetica, Arial, sans-serif;
   line-height: 1.4em;
@@ -40,23 +48,19 @@ body {
   background-color: $background-color;
 }
 
-.navbar {
+.main-container {
   width: 100%;
-  background-color: $vin-red;
-  padding: 7px;
-
-  a.logo {
-    line-height: 50px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    background: url('https://i.annihil.us/u/prod/misc/marvel.svg');
-    background-size: 108px 42px;
-    width: 108px;
-    height: 42px;
-  }
+  height: 100%;
 }
 
+@import 'components/character';
+@import 'components/comic';
+@import 'components/loading';
+@import 'components/modal-comic';
+@import 'components/navbar';
+@import 'components/pagination';
+@import 'components/searchbar';
 
-@import 'home-page';
 @import 'detail-page';
+@import 'favorites-page';
+@import 'home-page';

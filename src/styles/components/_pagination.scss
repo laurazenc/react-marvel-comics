@@ -1,0 +1,31 @@
+ul.pagination {  
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+
+  li {
+    background-color: $black;
+    margin: .5em;
+    font-weight: bold;
+    color: white;
+    -webkit-box-shadow: 1px 1px 5px rgba(45,39,39,0.3);
+    box-shadow: 1px 1px 5px rgba(45,39,39,0.3);
+    padding: 8px;
+
+    a {
+      padding: 8px;
+      font-family: 'league-gothic';
+    }
+
+    &.disabled {
+      opacity: 0.4;
+    }
+
+    &.active {
+      box-shadow: none!important;
+      background-color: $vin-red;
+      color: $black;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, IndexLink } from 'react-router';
+
+import { Navbar } from './../components';
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
@@ -9,10 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="navbar">
-          <IndexLink to="/" className="logo">                    
-          </IndexLink>
-        </div>
+        <Navbar/>
         {this.props.children}
       </div>
     );

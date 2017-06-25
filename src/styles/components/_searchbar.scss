@@ -1,0 +1,26 @@
+.search-bar {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.4);
+  overflow: hidden;
+
+  &:focus {
+    outline: none;
+  }
+  #search {
+    width: inherit;
+    height: 60px;
+    padding: 0 10px;
+    border: 0;
+    background-color: white;
+    border-bottom: 2px solid $vin-red;
+    font-size: 14px;
+
+    &:focus {
+      outline-offset: none;
+      outline: none;
+    }
+  }
+}

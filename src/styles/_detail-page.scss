@@ -1,48 +1,71 @@
-.hero-detail {
+.character-detail {
   h3 {
     font-family: 'league-gothic';
     font-size: 30px;
+    text-align: center;
+    font-weight: normal;
   }
 
-  .hero-header {
-    height: 275px;
+  .character-header {
+    height: 230px;
     width: 100%;
     position: relative;
 
-    .hero-top-header {
-      background-color: black;
-      padding: 15px;
-      height: 200px;
-      display: flex;
-      justify-content: center;
+    .character-top-header {
+      background-color: $black;
+      height: 150px;
+      text-align: center;
+      .character-name {
+        font-family: 'Marvel';
+        font-size: 40px;
+        line-height: 75px;
+        color: white;
+        height: 75px;
+      }
 
-      .hero-thumbnail-content{
+      .character-thumbnail-content{
+        margin: 0 auto;
         position: relative;
-
-        .hero-thumbnail {
-          height: 250px;
-          width: 200px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        .character-thumbnail {
+          height: 150px;
           background-size: cover;
-          border-radius: 7px;
+          border-radius: 50%;
+          border: 7px solid $black;
           box-shadow: 0 0 3px rgba(0,0,0,0.4);
         }
       }
 
-      .hero-content {
-        width: 300px;
-        margin-left: 20px;
-        color: white;
-        .hero-name {
-          font-family: 'Marvel';
-          font-size: 30px;
-          line-height: 40px;
-        }
-
-      }
     }
 
-    .hepo-top-image {
-      position: absolute;
-    }
   }
+  .character-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    color: $black;
+  }
+
+  .character-links {
+    .link {
+      display: inline-block;
+      text-transform: capitalize;
+      text-decoration: none;
+      margin-right: 15px;
+      color: $vin-red;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+  }
+}
+
+.comics-container {
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
